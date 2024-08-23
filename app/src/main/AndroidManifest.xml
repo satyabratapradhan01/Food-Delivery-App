@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WavesOfFood">
         <activity
+            android:name=".singupActivity"
+            android:exported="false" />
+        <activity
             android:name=".signup"
             android:exported="true">
             <intent-filter>
