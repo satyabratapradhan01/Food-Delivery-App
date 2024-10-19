@@ -2,23 +2,23 @@ package com.example.wavesoffood
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.wavesoffood.databinding.ActivityStartBinding
 
 class StartActivity : AppCompatActivity() {
-    private val binding: ActivityStartBinding by lazy{
-        ActivityStartBinding.inflate(layoutInflater)
-    }
+    // Initialize view binding using lazy initialization
+    private lateinit var binding: ActivityStartBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Inflate the layout using view binding
+        binding = ActivityStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.nextButton.setOnClickListener{
-            val intent = Intent(this,LoginActivity::class.java)
+
+        // Set click listener for the nextButton
+        binding.nextButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }
