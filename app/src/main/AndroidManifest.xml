@@ -11,18 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WavesOfFood">
         <activity
-            android:name=".singupActivity"
+            android:name=".chooseLocation"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".singupActivity"-->
-<!--            android:exported="true"-->
-<!--            tools:ignore="DuplicateActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+        <activity
+            android:name=".singupActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".singupActivity" -->
+        <!-- android:exported="true" -->
+        <!-- tools:ignore="DuplicateActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
